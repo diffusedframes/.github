@@ -1,0 +1,55 @@
+name: Bug report
+description: Report a reproducible problem or installation failure in this pack.
+title: "[Bug]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please use the repository for the affected pack and check existing issues first.
+        For suspected security vulnerabilities, use the repository's Security tab instead of this form.
+        Remove credentials and private or proprietary data from logs, workflows, and sample files.
+  - type: input
+    id: pack-version
+    attributes:
+      label: Pack version
+      description: Release version or commit, and how you installed the pack.
+      placeholder: "0.1.0, installed from a ZIP"
+    validations:
+      required: true
+  - type: textarea
+    id: environment
+    attributes:
+      label: Environment
+      description: Include your operating system, ComfyUI version and installation type, and Python version if known. Add GPU details if relevant.
+      placeholder: "Windows 11; ComfyUI Desktop version ...; Python ..."
+    validations:
+      required: true
+  - type: textarea
+    id: reproduction
+    attributes:
+      label: Steps to reproduce
+      description: Include the node names, relevant settings, and the smallest workflow or input that reproduces the problem.
+      placeholder: |
+        1. Load ...
+        2. Set ...
+        3. Run ...
+    validations:
+      required: true
+  - type: textarea
+    id: expected-actual
+    attributes:
+      label: Expected and actual behavior
+      description: Explain what should happen and what happens instead.
+    validations:
+      required: true
+  - type: textarea
+    id: logs
+    attributes:
+      label: Relevant logs
+      description: Paste the complete relevant error, including its traceback when available. Remove secrets and private data.
+      render: text
+  - type: textarea
+    id: attachments
+    attributes:
+      label: Workflow, sample files, or screenshots
+      description: Attach a minimal example if you can share it. Confirm that you have permission to distribute any attached scene, image, or asset.

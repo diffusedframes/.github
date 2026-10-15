@@ -1,0 +1,33 @@
+name: Feature request
+description: Suggest a workflow improvement or new capability for this pack.
+title: "[Feature]: "
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Please use the repository for the pack that would provide this feature.
+        A concrete creative workflow helps us understand and discuss the request.
+  - type: textarea
+    id: problem
+    attributes:
+      label: What problem are you trying to solve?
+      description: Describe the task and what is difficult with the current workflow.
+    validations:
+      required: true
+  - type: textarea
+    id: workflow
+    attributes:
+      label: Desired workflow
+      description: Describe the input, the action you want to perform, and the expected output. Examples are welcome.
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Suggested approach
+      description: If you have an implementation or interface idea, describe it here. It is fine to leave this open.
+  - type: textarea
+    id: alternatives
+    attributes:
+      label: Alternatives and context
+      description: Include workarounds you have tried, relevant references, and any compatibility or performance needs.
