@@ -2,7 +2,7 @@
 
 Creative tools connecting 3D scenes, animation, and generative workflows.
 
-We build ComfyUI custom nodes that help artists carry useful scene data into image and video workflows. Each pack has its own installation, examples, dependencies, and releases.
+Here you’ll find ComfyUI custom nodes for image and video workflows, with examples and guides to help you get started.
 
 ## First pack
 
